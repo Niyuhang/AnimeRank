@@ -2,12 +2,18 @@
 # -*- coding: utf-8 -*-
 # pylint: disable = line-too-long
 """
-    @FIle:const.py
+    @FIle:niconico_platform.py
     
     ~~~~~~~~~~~
     :copyright: (c) 2020 by the Niyuhang.
     :license: BSD, see LICENSE for more details.
 """
 
-PLATFORM_MODULE_PATH = "AnimeRank.src.control.platforms"
-TITLE = "动漫评分"
+from AnimeRank.src.control.platforms.base import BasePlatform
+
+
+class NiconicoPlatform(BasePlatform):
+
+    def crawl(self, *args, **kwargs):
+        ...
+

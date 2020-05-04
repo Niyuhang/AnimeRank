@@ -2,17 +2,15 @@
 # -*- coding: utf-8 -*-
 # pylint: disable = line-too-long
 """
-    @FIle:cilicilli_platform.py
+    @FIle:main.py
     
     ~~~~~~~~~~~
     :copyright: (c) 2020 by the Niyuhang.
     :license: BSD, see LICENSE for more details.
 """
 
-from AnimeRank.src.control.platforms.base import BasePlatform
+from AnimeRank.src.app import create_app
 
-
-class CilicilliPlatform(BasePlatform):
-
-    def crawl(self, *args, **kwargs):
-        ...
+if __name__ == '__main__':
+    app = create_app()
+    app.run()

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # pylint: disable = line-too-long
 """
-    @FIle:main.py
+    @FIle:__init__.py.py
     
     ~~~~~~~~~~~
     :copyright: (c) 2020 by the Niyuhang.
